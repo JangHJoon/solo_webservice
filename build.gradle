@@ -1,0 +1,22 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+    id 'eclipse'
+}
+
+group = 'com.freelec.springboot'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+   compile('org.projectlombok:lombok:1.18.8')
+    annotationProcessor('org.projectlombok:lombok:1.18.8')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
